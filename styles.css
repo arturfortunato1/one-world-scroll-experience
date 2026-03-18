@@ -286,7 +286,8 @@ h1,
 h2 {
   margin: 0 0 0.88rem;
   font-family: "Syne", sans-serif;
-  line-height: 1.06;
+  line-height: 1.14;
+  padding-bottom: 0.08em;
   color: #0f355e;
 }
 
