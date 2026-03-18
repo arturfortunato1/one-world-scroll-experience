@@ -1,0 +1,4 @@
+.DS_Store
+.tmp_frames/
+.tmp_video_frames/
+*.log

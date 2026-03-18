@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One World Trade Center | Storytelling 3D de Construção</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="loading-screen" aria-live="polite">
+      <p class="loading-title">SINCRONIZANDO CAMADAS ESTRUTURAIS</p>
+      <p class="loading-subtitle">One World Trade Center</p>
+    </div>
+
+    <div id="scene-wrap" aria-hidden="true">
+      <canvas id="webgl"></canvas>
+      <div id="final-photo"></div>
+      <div class="horizon-haze"></div>
+      <div class="atmosphere"></div>
+      <div class="vignette"></div>
+    </div>
+
+    <header class="site-header">
+      <p class="eyebrow">Estudo Arquitetônico Imersivo</p>
+      <p class="agency-mark">Narrativa 3D para Marca, Vendas e Impacto</p>
+    </header>
+
+    <a class="top-cta" href="#phase-5">Transformar em experiência de marca</a>
+
+    <aside class="phase-rail" aria-label="Etapas de rolagem">
+      <button class="phase-dot active" data-index="0" aria-label="Etapa 1"></button>
+      <button class="phase-dot" data-index="1" aria-label="Etapa 2"></button>
+      <button class="phase-dot" data-index="2" aria-label="Etapa 3"></button>
+      <button class="phase-dot" data-index="3" aria-label="Etapa 4"></button>
+      <button class="phase-dot" data-index="4" aria-label="Etapa 5"></button>
+    </aside>
+
+    <main id="scrollytelling">
+      <section class="phase active" id="phase-1">
+        <article class="phase-card hero-card">
+          <p class="phase-id">ETAPA 01</p>
+          <h1>One World Trade Center: Entrada Cinematográfica</h1>
+          <p>
+            O edifício começa deitado para criar impacto visual. Em seguida, gira e sobe até encostar
+            na base, preparando o palco para a construção vertical.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Design Icônico</span>
+            <span class="pill">Engajamento Imersivo</span>
+            <span class="pill">Storytelling Premium</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="phase" id="phase-2">
+        <article class="phase-card">
+          <p class="phase-id">ETAPA 02</p>
+          <h2>Alinhamento da Base</h2>
+          <p>
+            A fundação entra primeiro, estabiliza o conjunto e define a leitura estrutural para o
+            visitante acompanhar a lógica da obra sem esforço.
+          </p>
+        </article>
+      </section>
+
+      <section class="phase" id="phase-3">
+        <article class="phase-card">
+          <p class="phase-id">ETAPA 03</p>
+          <h2>Construção Vertical</h2>
+          <p>
+            Os andares descem em sequência e se encaixam um a um. O núcleo médio ganha ritmo e
+            proporção, traduzindo engenharia em narrativa visual clara.
+          </p>
+        </article>
+      </section>
+
+      <section class="phase" id="phase-4">
+        <article class="phase-card">
+          <p class="phase-id">ETAPA 04</p>
+          <h2>Coroamento da Torre</h2>
+          <p>
+            As camadas superiores finalizam o topo e consolidam a silhueta do projeto, reforçando o
+            caráter icônico do One World Trade Center.
+          </p>
+        </article>
+      </section>
+
+      <section class="phase" id="phase-5">
+        <article class="phase-card final-card">
+          <p class="phase-id">ETAPA 05</p>
+          <h2>Projeto Concluído.</h2>
+          <p>
+            O zoom-out final revela o edifício completo com presença, clareza e escala. Uma
+            apresentação que transforma engenharia em percepção de valor.
+          </p>
+          <p class="signature">Arquitetura pronta para encantar, convencer e vender.</p>
+          <div class="final-actions">
+            <a href="#phase-1" class="btn btn-primary">Rever Experiência</a>
+            <a href="#phase-2" class="btn btn-secondary">Iniciar Novo Estudo</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
