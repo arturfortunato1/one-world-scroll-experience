@@ -109,7 +109,7 @@ body.is-final::after {
     linear-gradient(180deg, rgba(9, 25, 43, 0.08) 0%, rgba(8, 19, 34, 0.24) 100%),
     url("./one-world-final.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: 50% var(--final-photo-y, 53%);
   background-repeat: no-repeat;
   filter: blur(8px) saturate(0.9) contrast(1.02);
 }

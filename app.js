@@ -100,6 +100,18 @@ const baseLighting = {
 let master = null;
 let currentPhase = -1;
 
+function updateFinalPhotoFraming() {
+  const aspect = window.innerWidth / Math.max(1, window.innerHeight);
+  let anchorY = 53;
+
+  if (aspect > 1) {
+    const wideFactor = THREE.MathUtils.clamp((aspect - 1.32) / 0.9, 0, 1);
+    anchorY = 44 - wideFactor * 20;
+  }
+
+  finalPhoto.style.setProperty("--final-photo-y", `${anchorY.toFixed(1)}%`);
+}
+
 function toDisplayMessage(title, subtitle) {
   if (loadingTitle) loadingTitle.textContent = title;
   if (loadingSubtitle) loadingSubtitle.textContent = subtitle;
@@ -616,8 +628,10 @@ function onResize() {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  updateFinalPhotoFraming();
 }
 window.addEventListener("resize", onResize);
+updateFinalPhotoFraming();
 
 initArchitecture().finally(() => {
   requestAnimationFrame(() => {
